@@ -1,13 +1,16 @@
 ---
 ---
 
-@import "variables";
 @import "bootstrap/scss/bootstrap";
+@import "variables";
 
-.content {
-  font-size: $custom-font-size;
-}
+// Layout
+@import "header";
+@import "footer";
 
-body {
-  
-}
+// Home page styles
+@import "home/our-services";
+@import "home/our-work";
+@import "home/safety-commitment";
+@import "home/service-area";
+@import "home/start-project";

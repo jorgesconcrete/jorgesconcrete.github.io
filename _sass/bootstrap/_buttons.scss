@@ -1,0 +1,17 @@
+// =======================================================
+
+// Buttons
+
+// =======================================================
+
+.btn-primary {
+  font-family: $primary-font-family;
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);
+}
+
+.btn-secondary {
+  font-family: $primary-font-family;
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);
+}

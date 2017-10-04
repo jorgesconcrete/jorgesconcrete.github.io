@@ -1,12 +1,15 @@
 ---
 ---
 
+// Bootstrap
 @import "bootstrap/scss/bootstrap";
-@import "variables";
 
-// Layout
+// Layout and Config
+@import "mixins";
+@import "variables";
 @import "header";
 @import "footer";
+@import "typography";
 
 // Home page styles
 @import "home/our-services";
@@ -14,3 +17,6 @@
 @import "home/safety-commitment";
 @import "home/service-area";
 @import "home/start-project";
+
+// Boostrap Overrides
+@import "bootstrap/buttons";

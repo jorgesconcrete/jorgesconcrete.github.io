@@ -21,3 +21,16 @@ h1 {
     @include font-size(40px);
   }
 }
+
+h2 {
+  text-align: center;
+  
+  &:after {
+    content: "";
+    background-color: $primary-brand-color;
+    width: 100px;
+    height: 6px;
+    display: block;
+    margin: 30px auto 30px auto;
+  }
+}

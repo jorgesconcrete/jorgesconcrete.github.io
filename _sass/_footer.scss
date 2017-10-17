@@ -3,3 +3,87 @@
 // Footer
 
 // =======================================================
+
+.footer {
+  border-top: 1px solid #DFDFDF;
+  text-align: center;
+  padding: 80px 0;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  ul {
+    @include font-size(14px);
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__section-titles {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__bbb-logo {
+    @include media-breakpoint-up(md) {
+      float: right;
+    }
+  }
+}
+
+.logo-copyright {
+  @include make-col(12);
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+    margin-bottom: 0;
+  }
+
+  &__jc-logo {
+    max-width: 85%;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      max-width: auto;
+    }
+  }
+
+  &__copyright-text {
+    @include font-size(13px);
+    color: #bcbcbc;
+  }
+}
+
+.operating-hours {
+  @include make-col(12);
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+    margin-bottom: 0;
+  }
+}
+
+.address-about {
+  @include make-col(12);
+
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+  }
+
+  ul {
+    @include media-breakpoint-up(md) {
+      float: left;
+    }
+  }
+}

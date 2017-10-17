@@ -6696,7 +6696,72 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .main-header .btn {
     margin-top: 70px; }
 
-h1, h2, h3, h4, h5, h6, ul, ol, p {
+.footer {
+  border-top: 1px solid #DFDFDF;
+  text-align: center;
+  padding: 80px 0; }
+  @media (min-width: 768px) {
+    .footer {
+      text-align: left; } }
+  .footer ul {
+    font-size: 14px;
+    font-size: 0.875rem;
+    list-style: none;
+    padding-left: 0; }
+  .footer li {
+    margin-bottom: 10px; }
+    .footer li:last-of-type {
+      margin-bottom: 0; }
+  .footer__section-titles {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .footer__bbb-logo {
+      float: right; } }
+
+.logo-copyright {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .logo-copyright {
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%;
+      margin-bottom: 0; } }
+  .logo-copyright__jc-logo {
+    max-width: 85%;
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .logo-copyright__jc-logo {
+        max-width: auto; } }
+  .logo-copyright__copyright-text {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    color: #bcbcbc; }
+
+.operating-hours {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .operating-hours {
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%;
+      margin-bottom: 0; } }
+
+.address-about {
+  flex: 0 0 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .address-about {
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%; } }
+  @media (min-width: 768px) {
+    .address-about ul {
+      float: left; } }
+
+h1, h2, h3, h4, h5, h6, ul, ol, p, span {
   font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.4; }
 

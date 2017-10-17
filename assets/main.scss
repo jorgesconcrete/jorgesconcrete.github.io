@@ -12,11 +12,11 @@
 @import "typography";
 
 // Home page styles
-@import "home/our-services";
-@import "home/our-work";
-@import "home/safety-commitment";
-@import "home/service-area";
-@import "home/start-project";
+@import "our-services";
+@import "our-work";
+@import "safety-commitment";
+@import "service-area";
+@import "start-project";
 
 // Boostrap Overrides
-@import "bootstrap/buttons";
+@import "buttons";

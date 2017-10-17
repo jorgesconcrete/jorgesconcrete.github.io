@@ -4,13 +4,13 @@
 
 // =======================================================
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, ul, ol, p {
   font-family: $primary-font-family;
   line-height: 1.4;
 }
 
 h1 {
-  @include font-size(22px);
+  @include font-size(24px);
   font-weight: 300;
 
   @include media-breakpoint-up(md) {
@@ -22,9 +22,22 @@ h1 {
   }
 }
 
-h2 {
+%default-section-title {
+  @include font-size(28px);
+  font-weight: 500;
+
+  @include media-breakpoint-up(md) {
+    @include font-size(30px);
+    font-weight: 500;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font-size(36px);
+    font-weight: 500;
+  }
+
   text-align: center;
-  
+
   &:after {
     content: "";
     background-color: $primary-brand-color;
@@ -32,5 +45,37 @@ h2 {
     height: 6px;
     display: block;
     margin: 30px auto 30px auto;
+  }
+}
+
+h3 {
+  @include font-size(18px);
+  font-weight: 500;
+
+  @include media-breakpoint-up(md) {
+    @include font-size(20px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font-size(22px);
+  }
+}
+
+ul, ol {
+  @include font-size(16px);
+}
+
+p {
+  @include font-size(15px);
+}
+
+.text-link {
+  color: $primary-brand-color;
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: $primary-brand-color;
+    text-decoration: none;
   }
 }

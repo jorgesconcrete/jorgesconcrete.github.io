@@ -3,3 +3,28 @@
 // Safety Commitment
 
 // =======================================================
+
+.safety-commitment {
+  padding: 80px 0;
+  background-color: $primary-brand-color;
+  text-align: center;
+
+  &__title {
+    @extend %default-section-title;
+    color: $white;
+
+    &:after {
+      background-color: $white;
+    }
+  }
+
+  &__intro {
+    margin: auto;
+    color: $white;
+    max-width: 620px;
+  }
+
+  &__construction-icon {
+    margin-bottom: 20px;
+  }
+}

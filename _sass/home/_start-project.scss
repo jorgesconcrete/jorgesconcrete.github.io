@@ -3,3 +3,16 @@
 // Start Project
 
 // =======================================================
+
+.start-project {
+  margin: 80px 0;
+  text-align: center;
+
+  &__title {
+    @extend %default-section-title;
+  }
+
+  .btn-primary {
+    margin-top: 40px;
+  }
+}

@@ -3,3 +3,53 @@
 // Service Area
 
 // =======================================================
+
+.service-area {
+  padding: 80px 0;
+  background: url('/assets/img/winnipeg-bg.jpg') no-repeat;
+  background-size: cover;
+
+  &__title {
+    @extend %default-section-title;
+    color: $white;
+
+    &:after {
+      background-color: $white;
+    }
+  }
+
+  &__intro {
+    margin: auto;
+    color: $white;
+    max-width: 620px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      text-align: center;
+      margin-bottom: 20px;
+      color: $white;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &:first-child {
+      @include media-breakpoint-up(md) {
+        @include make-col-offset(2);
+      }
+    }
+  }
+}
